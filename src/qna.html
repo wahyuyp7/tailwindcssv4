@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QnA Clicked Example</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100 p-10">
+  <div class="max-w-2xl mx-auto space-y-4">
+    <!-- Question 1 -->
+    <div class="group bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="toggleAnswer(1)">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-gray-800">What is Tailwind CSS?</h3>
+        <svg class="w-6 h-6 text-gray-600 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <p id="answer-1" class="mt-2 text-gray-600 hidden">Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.</p>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="group bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="toggleAnswer(2)">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-gray-800">How do I install Tailwind CSS?</h3>
+        <svg class="w-6 h-6 text-gray-600 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <p id="answer-2" class="mt-2 text-gray-600 hidden">You can install Tailwind CSS via npm by running <code>npm install tailwindcss</code>.</p>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="group bg-white p-6 rounded-lg shadow-md cursor-pointer" onclick="toggleAnswer(3)">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-gray-800">Is Tailwind CSS responsive?</h3>
+        <svg class="w-6 h-6 text-gray-600 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      <p id="answer-3" class="mt-2 text-gray-600 hidden">Yes, Tailwind CSS is fully responsive and provides utilities for building responsive designs.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(id) {
+      const answer = document.getElementById(`answer-${id}`);
+      answer.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

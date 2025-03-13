@@ -1,0 +1,11 @@
+# File log
+*.log
+
+# Direktori build
+build/
+
+# Direktori node_modules
+node_modules/
+
+# File konfigurasi
+config.php
